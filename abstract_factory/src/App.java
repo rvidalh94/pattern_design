@@ -15,9 +15,11 @@ public class App {
                 case 2:
                     useSportTeams(new BasketballTeamFactory());
                     break;
+                case 3:
+                    useSportTeams(new HockeyTeamFactory());
             }
             System.out.print("\n");
-        }while(option!=3);
+        }while(option!=4);
     }
 
     public static void useSportTeams(SportTeamFactory factory){
@@ -34,7 +36,8 @@ public class App {
             "Sports Menu\n"
             + "1. Show a Football team.\n"
             + "2. Show a Basketball team.\n"
-            + "3. Salir.\n"
+            + "3. Show a Hockey team.\n"
+            + "4. Salir.\n"
             + "Select an option: "
         );
         return Integer.parseInt(sc.nextLine());
